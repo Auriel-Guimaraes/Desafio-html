@@ -1,0 +1,98 @@
+/* Reset básico para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo padrão do corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilo do botão de alternância de modo escuro */
+#dark-mode-toggle {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Estilo dos artigos */
+article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para dispositivos maiores */
+@media (min-width: 768px) {
+    main {
+        padding: 20px;
+    }
+}
+
+/* Estilos para modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode header {
+    background: #1e1e1e;
+}
+
+body.dark-mode article {
+    background: #1e1e1e;
+}
+
+body.dark-mode footer {
+    background: #1e1e1e;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: #444;
+}
